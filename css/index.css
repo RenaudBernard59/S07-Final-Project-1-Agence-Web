@@ -46,7 +46,8 @@ h2{
 
 /********************MAIN*************************/
 
-section, article{border: 1px solid #000;}
+h1{
+  text-align: center;}
 
 main nav{
   display: flex;
@@ -65,16 +66,18 @@ main nav img{
 }
 
 section{
+  margin:20px 0;
+  background-color: rgba(0, 0, 0, 0.25);
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: flex-start;
 }
 
-section img{
+.titre img{
   margin:0 30px;
-  height: 50%;
-  width: 50%;
+  height: 25%;
+  width: 25%;
 }
 
 .titre{
@@ -95,7 +98,42 @@ section img{
 /********************TABLETTE***************************/
 /****************************************************/
 
+@media screen and (min-width: 900px){
 
+  header, header nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  main nav img{
+    height: 10%;
+    width: 10%;
+  }
+
+/*****************MAIN********************************/
+
+
+
+section{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.titre{
+  width: 30%;
+  flex-direction: column;
+}
+
+.titre img{
+  height: 50%;
+  width: 50%;
+}
+
+
+}
 
 
 
@@ -107,25 +145,19 @@ section img{
 @media screen and (min-width: 1200px){
 
 
+header nav a{
+  font-size: 2.5em;
+}
 
-  header, header nav{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
+.titre img{
+  height: 50%;
+  width: 50%;
+}
 
 
-  section{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-  }
 
-  .titre{
-    width: 30%;
-    flex-direction: column;
-  }
+
+
 
 
 
