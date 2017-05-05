@@ -1,0 +1,103 @@
+/*
+#########################################################
+# 					General 							#
+#########################################################
+ */
+
+/*===================
+General */
+form {
+	display: flex;
+}
+
+form > div {
+	width: 50%;
+}
+
+form > div + div {
+	margin-left: 1em;
+}
+
+div > p {
+	display: flex;
+}
+
+form input:not([type=submit]) {
+	flex: 1;
+}
+
+div + div {
+	display: flex;
+    flex-direction: column;
+}
+textarea {
+	flex: 1;
+}
+
+
+
+/*=======================================================*/
+
+@media screen and (min-width: 1280px)
+{
+
+}
+
+
+/*=======================================================*/
+
+@media screen and (max-width: 1280px)
+{
+
+}
+
+
+/*=======================================================*/
+
+@media screen and (max-width: 600px)
+{
+	form {
+	    flex-direction: column;
+	}
+
+	form p {
+		display: block;
+	}
+
+	label {
+		display: block;
+		text-align: left;
+	}
+
+	form > div {
+		width: auto;
+	}
+
+	form > div + div {
+		margin-left: 0;
+		margin-bottom: 1em;
+		order: -1
+	}
+
+	input {
+		width: 100%;
+	}
+
+
+}
+
+@media screen and (max-width: 350px)
+{
+
+
+
+}
+
+
+
+
+
+
+
+
+
