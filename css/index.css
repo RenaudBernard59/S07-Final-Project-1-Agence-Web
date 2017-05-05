@@ -72,6 +72,8 @@ section{
   flex-direction: column;
   justify-content: space-around;
   align-items: flex-start;
+  width: 95%;
+  margin-left: 35px;
 }
 
 .titre img{
@@ -90,9 +92,19 @@ section{
 }
 
 .contenu{
+  background-color: rgba(0, 0, 0, 0.24);
   margin-left: 10px;
   width: 95%;
   height: 300px;
+}
+
+.contenu ul{
+  margin-top: 50px;
+}
+
+.contenu ul li{
+  list-style-type: none;
+  margin: 30px 0;
 }
 /*****************************************************/
 /********************TABLETTE***************************/
