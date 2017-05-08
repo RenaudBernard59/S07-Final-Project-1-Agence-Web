@@ -1,0 +1,354 @@
+/*****************************************/
+/*****************************************/
+/*******************GENERAL****************/
+/*****************************************/
+/*****************************************/
+
+body{
+  background-image: url(../img/imgVecteur/fond.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+/********************HEADER*************************/
+
+header{
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 95%;
+  margin:10px auto;
+}
+
+header nav{
+  display: flex;
+  width: 70%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav a{
+  font-size: 1.5em;
+  text-decoration: none;
+  color:white;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+}
+
+h2{
+  text-align: center;
+}
+
+.logoSite{
+  height: 20%;
+  width: 20%;
+}
+
+
+/********************FIN HEADER*************************/
+
+/********************MAIN*************************/
+
+h1{
+  text-align: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.75);
+  width: 50%;
+  margin-left: 25%;
+}
+
+section{
+  color: white;
+  background-color: rgba(0, 0, 0, 0.55);
+  margin: 20px 0 20px 2.5%;
+}
+
+/*****************************************/
+/*****************************************/
+/*******************INDEX****************/
+/*****************************************/
+/*****************************************/
+
+
+/*****************************************************/
+/********************MOBILE***************************/
+/****************************************************/
+
+.indexMain nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 93.5%;
+  margin: 30px auto;
+  padding: 10px 10px;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.indexMain nav img{
+  height: 15%;
+  width: 15%;
+}
+
+.indexMain section{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 95%;
+}
+
+.titre img{
+  margin:0 30px;
+  height: 25%;
+  width: 25%;
+}
+
+.titre{
+  width: 80%;
+  display: flex;
+  flex-direction:row-reverse;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.contenu{
+  background-color: rgba(0, 0, 0, 0.24);
+  margin-left: 10px;
+  width: 95%;
+  height: 300px;
+}
+
+.contenu ul{
+  margin-top: 50px;
+}
+
+.contenu ul li{
+  list-style-type: none;
+  margin: 30px 0;
+}
+
+/*****************************************************/
+/********************TABLETTE***************************/
+/****************************************************/
+
+@media screen and (min-width: 900px){
+
+  header, header nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .indexMain nav img{
+    height: 10%;
+    width: 10%;
+  }
+
+/*****************MAIN********************************/
+
+
+
+.indexMain section{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.titre{
+  width: 30%;
+  flex-direction: column;
+}
+
+.titre img{
+  height: 50%;
+  width: 50%;
+}
+
+
+}
+
+/*****************************************************/
+/*****************COMPUTEUR***************************/
+/****************************************************/
+
+@media screen and (min-width: 1200px){
+
+
+header nav a{
+  font-size: 2.5em;
+}
+
+.titre img{
+  height: 50%;
+  width: 50%;
+}
+
+}
+
+
+
+
+
+/*****************************************/
+/*****************************************/
+/*******************EQUIPE****************/
+/*****************************************/
+/*****************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*****************************************/
+/*****************************************/
+/*******************Produit****************/
+/*****************************************/
+/*****************************************/
+
+
+/*****************************************/
+/*******************Mobile****************/
+/*****************************************/
+
+.produitMain section{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 95%;
+}
+
+/*****************************************************/
+/*****************COMPUTEUR***************************/
+/****************************************************/
+
+@media screen and (min-width: 1200px){
+
+
+/********************MAIN*************************/
+.produitMain .positionProd{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.positionProd section{
+  margin: 0;
+  width: 30%;
+  margin-top: 20px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+}
+
+
+/*****************************************/
+/*****************************************/
+/*******************CONTACT****************/
+/*****************************************/
+/*****************************************/
