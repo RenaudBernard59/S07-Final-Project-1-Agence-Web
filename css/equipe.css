@@ -1,0 +1,96 @@
+/*
+#########################################################
+# 					General 							#
+#########################################################
+ */
+
+/*===================
+General */
+section {
+
+	background-color: black;
+}
+
+h1 {
+	color: white;
+}
+
+h2 {
+	color: green;
+	text-align: center;
+}
+
+#devBlock {
+	display: flex;
+	flex-direction: row;
+    flex-wrap: wrap;
+	text-align: justify;
+	justify-content: space-around;
+}
+
+article {
+
+	border: solid white 2px;
+	border-radius: 20px;
+	padding: 20px;
+	margin: 20px;
+	width: 400px;
+	background-color: rgba(255,255,255,0.5);
+}
+
+.developer {
+	border: solid black 1px;
+	border-radius: 50%;
+	background-size: cover;
+	width: 150px;
+	height: 150px;
+	display: float;
+	float: left;
+	margin: 15px;
+}
+
+#renaud {
+	background-image: url(../img/equipe/RenaudBernard59.jpg);
+}
+
+#baptiste {
+	background-image: url(../img/equipe/baptiste.png);
+}
+
+
+
+
+
+/*=======================================================*/
+
+@media screen and (min-width: 1280px)
+{
+
+}
+
+
+/*=======================================================*/
+
+@media screen and (max-width: 1280px)
+{
+
+}
+
+
+/*=======================================================*/
+
+@media screen and (max-width: 350px)
+{
+
+
+
+}
+
+
+
+
+
+
+
+
+
