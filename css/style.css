@@ -17,6 +17,7 @@ header{
   background-color: rgba(0, 0, 0, 0.75);
   display: flex;
   flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: space-around;
   width: 95%;
   margin:10px auto;
@@ -31,7 +32,7 @@ header nav{
 }
 
 header nav a{
-  font-size: 1.5em;
+  font-size: 1em;
   text-decoration: none;
   color:white;
   background-color: rgba(0, 0, 0, 0.2);
@@ -53,11 +54,11 @@ h2{
 /********************MAIN*************************/
 
 h1{
+  margin:auto;
   text-align: center;
   color: white;
   background-color: rgba(0, 0, 0, 0.75);
   width: 50%;
-  margin-left: 25%;
 }
 
 section{
@@ -202,57 +203,41 @@ header nav a{
 /*****************************************/
 
 
+#devBlock {
+	display: flex;
+	flex-direction: row;
+  flex-wrap: wrap;
+	text-align: justify;
+	justify-content: space-around;
+}
 
+article {
+	border: solid white 2px;
+	border-radius: 20px;
+	padding: 20px;
+	margin: 20px;
+	width: 400px;
+	background-color: rgba(255,255,255,0.5);
+}
 
+.developer {
+	border: solid black 1px;
+	border-radius: 50%;
+	background-size: cover;
+	width: 150px;
+	height: 150px;
+	display: float;
+	float: left;
+	margin: 15px;
+}
 
+#renaud {
+	background-image: url(../img/equipe/RenaudBernard59.jpg);
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#baptiste {
+	background-image: url(../img/equipe/baptiste.png);
+}
 
 
 
@@ -339,10 +324,16 @@ header nav a{
 
 .positionProd section{
   margin: 0;
-  width: 30%;
+  width: 33%;
   margin-top: 20px;
+  height: 600px;
   background-color: rgba(0, 0, 0, 0.3);
 }
+
+.positionProd section article{
+  width: 80%;
+}
+
 
 }
 
@@ -352,3 +343,100 @@ header nav a{
 /*******************CONTACT****************/
 /*****************************************/
 /*****************************************/
+
+.formulaireMain{
+  width: 95%;
+}
+
+form {
+	display: flex;
+}
+
+form > div {
+	width: 48%;
+  margin-left: 20px;
+}
+
+form > div + div {
+	margin-left: 1em;
+}
+
+div > p {
+	display: flex;
+}
+
+form input:not([type=submit]) {
+	flex: 1;
+}
+
+div + div {
+	display: flex;
+    flex-direction: column;
+}
+textarea {
+	flex: 1;
+  width: 90%;
+  margin:10px 5%;
+}
+
+input{
+  color:black;
+}
+
+iframe{
+  width: 90%;
+  margin: 10px 5%;
+}
+
+
+
+
+/*=======================================================*/
+
+@media screen and (min-width: 1280px)
+{
+
+}
+
+
+/*=======================================================*/
+
+@media screen and (max-width: 1280px)
+{
+
+}
+
+
+/*=======================================================*/
+
+@media screen and (max-width: 600px)
+{
+	form {
+	    flex-direction: column;
+	}
+
+	form p {
+		display: block;
+	}
+
+	label {
+		display: block;
+		text-align: left;
+	}
+
+	form > div {
+		width: auto;
+	}
+
+	form > div + div {
+		margin-left: 0;
+		margin-bottom: 1em;
+		order: -1
+	}
+
+	input {
+		width: 50%;
+	}
+
+
+}
